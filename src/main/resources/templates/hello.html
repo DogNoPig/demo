@@ -1,0 +1,18 @@
+<!--使用模板 thymeleaf 例子-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleaf</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/static/css/style.css" th:href="@{/static/css/style.css}"/>
+    <script type="text/javascript" src="../../webapp/static/js/thymeleaf.js" th:src="@{/static/js/thymeleaf.js}"></script>
+    <script>
+        testFunction();
+    </script>
+</head>
+<body>
+<p th:text="${name}" >name</p>
+<p th:text="'Hello！ ' + ${name} + '!'" >hello world</p>
+<p th:text="|Hello! ${name}!|">hello world</p>
+</body>
+</html>
