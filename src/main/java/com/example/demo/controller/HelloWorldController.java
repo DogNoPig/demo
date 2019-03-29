@@ -46,6 +46,8 @@ public class HelloWorldController {
 
         m.addAttribute("ps", ps);
 
+        Date now = new Date();
+        m.addAttribute("now","now");
 
         m.addAttribute("htmlContent", htmlContent);
         m.addAttribute("currentProduct", currentProduct);
